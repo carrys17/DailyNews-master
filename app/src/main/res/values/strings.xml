@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">天天日报</string>
+    <string name="github_issues">您好，很希望得到您的意见，由于没有线上反馈系统，您可以通过下列方式联系到我，我将根据情况尽量处理</string>
+    <string name="about_me">天天日报是一款完全免费的开源软件，不作任何商业用途。\n日报API取自ZhihuDailyPurify\n如被告知停止使用，立即下架app，移除项目。</string>
+</resources>

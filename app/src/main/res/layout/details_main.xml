@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/detail_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/mouse_bg"/>
+
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:textSize="24sp"
+                    android:maxLines="2"
+                    android:textColor="#fff"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/detail_WebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/detail_progress"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:indeterminateDrawable="@drawable/progressbar_bg"
+        android:indeterminateDuration="700"
+        />
+
+</FrameLayout>
